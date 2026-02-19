@@ -71,7 +71,7 @@ return [
     // Zone Section
     'zone_title' => 'Actief in heel Vlaanderen',
     'zone_subtitle' => 'Van Antwerpen tot Gent, Brussel tot Leuven — wij komen naar u toe',
-    'zone_description' => 'Duogroep is actief in heel Vlaanderen. Wij bedienen klanten in Antwerpen, Gent, Brussel, Leuven, Mechelen, Brugge, Hasselt, Turnhout, Sint-Niklaas, Aalst en alle gemeenten daartussen. Waar u ook gevestigd bent, wij staan voor u klaar.',
+    'zone_description' => 'Duogroep is actief in heel Vlaanderen. Wij bedienen klanten in Antwerpen, Gent, Brussel, Leuven, Mechelen, Hasselt, Turnhout, Sint-Niklaas, Aalst en alle gemeenten daartussen. Waar u ook gevestigd bent, wij staan voor u klaar.',
 
     // Quick Form
     'form_title' => 'Vraag een gratis offerte aan',

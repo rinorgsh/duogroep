@@ -71,7 +71,7 @@ return [
     // Zone Section
     'zone_title' => 'Actifs dans toute la Flandre',
     'zone_subtitle' => 'D\'Anvers à Gand, de Bruxelles à Louvain — nous venons à vous',
-    'zone_description' => 'Duogroep est actif dans toute la Flandre. Nous desservons des clients à Anvers, Gand, Bruxelles, Louvain, Malines, Bruges, Hasselt, Turnhout, Saint-Nicolas, Alost et toutes les communes entre les deux. Où que vous soyez, nous sommes là pour vous.',
+    'zone_description' => 'Duogroep est actif dans toute la Flandre. Nous desservons des clients à Anvers, Gand, Bruxelles, Louvain, Malines, Hasselt, Turnhout, Saint-Nicolas, Alost et toutes les communes entre les deux. Où que vous soyez, nous sommes là pour vous.',
 
     // Quick Form
     'form_title' => 'Demandez un devis gratuit',

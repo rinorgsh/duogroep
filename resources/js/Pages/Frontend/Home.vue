@@ -539,7 +539,7 @@ const testimonials = [
 
                         <!-- City pills -->
                         <div class="flex flex-wrap gap-2 mb-6 md:mb-8">
-                            <span v-for="(city, i) in ['Antwerpen', 'Gent', 'Brussel', 'Leuven', 'Mechelen', 'Brugge', 'Hasselt', 'Turnhout', 'Sint-Niklaas', 'Aalst']"
+                            <span v-for="(city, i) in ['Antwerpen', 'Gent', 'Brussel', 'Leuven', 'Mechelen', 'Hasselt', 'Turnhout', 'Sint-Niklaas', 'Aalst']"
                                   :key="city"
                                   :class="[
                                       'px-3 py-1.5 rounded-full text-xs font-semibold',

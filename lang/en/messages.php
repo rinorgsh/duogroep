@@ -71,7 +71,7 @@ return [
     // Zone Section
     'zone_title' => 'Active across all of Flanders',
     'zone_subtitle' => 'From Antwerp to Ghent, Brussels to Leuven — we come to you',
-    'zone_description' => 'Duogroep is active throughout Flanders. We serve clients in Antwerp, Ghent, Brussels, Leuven, Mechelen, Bruges, Hasselt, Turnhout, Sint-Niklaas, Aalst and all municipalities in between. Wherever you are located, we are ready for you.',
+    'zone_description' => 'Duogroep is active throughout Flanders. We serve clients in Antwerp, Ghent, Brussels, Leuven, Mechelen, Hasselt, Turnhout, Sint-Niklaas, Aalst and all municipalities in between. Wherever you are located, we are ready for you.',
 
     // Quick Form
     'form_title' => 'Request a free quote',
