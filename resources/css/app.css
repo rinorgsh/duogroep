@@ -8,6 +8,7 @@
     html {
         scroll-behavior: smooth;
         -webkit-text-size-adjust: 100%;
+        background-color: #172554;
     }
     body {
         @apply font-sans text-gray-800 antialiased;
@@ -21,10 +22,6 @@
     /* Better touch targets */
     a, button {
         -webkit-tap-highlight-color: transparent;
-    }
-    /* Smooth scrolling on iOS */
-    * {
-        -webkit-overflow-scrolling: touch;
     }
     /* Lazy loaded images */
     img {

@@ -46,28 +46,28 @@ onMounted(() => {
     if (el) observer.observe(el);
 });
 
-// Carousel auto-scroll with requestAnimationFrame
+// Carousel auto-scroll with setInterval (more reliable on iOS than rAF)
 const servicesCarousel = ref(null);
 const testimonialsCarousel = ref(null);
 const carousels = {};
 
 function initCarousel(name, el) {
     if (!el) return;
-    const state = { el, raf: null, paused: false, speed: 0.5, resumeTimer: null };
+    if (el.scrollWidth <= el.clientWidth) return; // not scrollable
+    if (carousels[name]) return; // already running
+
+    const state = { el, interval: null, paused: false, resumeTimer: null };
     carousels[name] = state;
 
-    function tick() {
-        if (!state.paused) {
-            const max = state.el.scrollWidth - state.el.clientWidth;
-            if (state.el.scrollLeft >= max - 1) {
-                state.el.scrollLeft = 0;
-            } else {
-                state.el.scrollLeft += state.speed;
-            }
+    state.interval = setInterval(() => {
+        if (state.paused) return;
+        const max = state.el.scrollWidth - state.el.clientWidth;
+        if (state.el.scrollLeft >= max - 1) {
+            state.el.scrollLeft = 0;
+        } else {
+            state.el.scrollLeft += 1;
         }
-        state.raf = requestAnimationFrame(tick);
-    }
-    state.raf = requestAnimationFrame(tick);
+    }, 30);
 }
 
 function onCarouselTouch(name, type) {
@@ -81,20 +81,23 @@ function onCarouselTouch(name, type) {
     }
 }
 
+function tryInitCarousels() {
+    if (servicesCarousel.value) initCarousel('services', servicesCarousel.value);
+    if (testimonialsCarousel.value) initCarousel('testimonials', testimonialsCarousel.value);
+}
+
 onMounted(() => {
-    setTimeout(() => {
-        // Only auto-scroll if the element is actually scrollable (mobile)
-        if (servicesCarousel.value && servicesCarousel.value.scrollWidth > servicesCarousel.value.clientWidth) {
-            initCarousel('services', servicesCarousel.value);
-        }
-        if (testimonialsCarousel.value && testimonialsCarousel.value.scrollWidth > testimonialsCarousel.value.clientWidth) {
-            initCarousel('testimonials', testimonialsCarousel.value);
-        }
-    }, 500);
+    // Try multiple times - images may not be loaded yet on real phones
+    setTimeout(tryInitCarousels, 800);
+    setTimeout(tryInitCarousels, 2000);
+    setTimeout(tryInitCarousels, 4000);
 });
 
 onUnmounted(() => {
-    Object.values(carousels).forEach(s => cancelAnimationFrame(s.raf));
+    Object.values(carousels).forEach(s => {
+        clearInterval(s.interval);
+        clearTimeout(s.resumeTimer);
+    });
 });
 
 const quickForm = useForm({
