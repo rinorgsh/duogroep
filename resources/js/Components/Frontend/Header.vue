@@ -34,6 +34,7 @@ onUnmounted(() => {
             'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
             scrolled ? 'bg-primary-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
         ]"
+        style="padding-top: env(safe-area-inset-top, 0px);"
     >
         <!-- Top Bar - Desktop only, hidden when transparent for cleaner look -->
         <div :class="['overflow-hidden transition-all duration-300 hidden lg:block', scrolled ? 'max-h-0 opacity-0' : 'max-h-10 opacity-100']">
@@ -121,7 +122,7 @@ onUnmounted(() => {
             leave-from-class="opacity-100"
             leave-to-class="opacity-0"
         >
-            <div v-show="mobileMenuOpen" class="lg:hidden fixed inset-0 top-16 bg-primary-900 z-40 overflow-y-auto">
+            <div v-show="mobileMenuOpen" class="lg:hidden fixed inset-0 bg-primary-900 z-40 overflow-y-auto" style="top: calc(4rem + env(safe-area-inset-top, 0px));">
                 <div class="px-6 py-8 space-y-2">
                     <Link
                         v-for="item in navigation"

@@ -2,7 +2,7 @@
 import { Head, Link, useForm } from '@inertiajs/vue3';
 import FrontendLayout from '@/Layouts/FrontendLayout.vue';
 import { useTranslations } from '@/Composables/useTranslations';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const { t, localePath } = useTranslations();
 
@@ -44,6 +44,57 @@ onMounted(() => {
 
     const el = document.getElementById('stats-section');
     if (el) observer.observe(el);
+});
+
+// Carousel auto-scroll with requestAnimationFrame
+const servicesCarousel = ref(null);
+const testimonialsCarousel = ref(null);
+const carousels = {};
+
+function initCarousel(name, el) {
+    if (!el) return;
+    const state = { el, raf: null, paused: false, speed: 0.5, resumeTimer: null };
+    carousels[name] = state;
+
+    function tick() {
+        if (!state.paused) {
+            const max = state.el.scrollWidth - state.el.clientWidth;
+            if (state.el.scrollLeft >= max - 1) {
+                state.el.scrollLeft = 0;
+            } else {
+                state.el.scrollLeft += state.speed;
+            }
+        }
+        state.raf = requestAnimationFrame(tick);
+    }
+    state.raf = requestAnimationFrame(tick);
+}
+
+function onCarouselTouch(name, type) {
+    const state = carousels[name];
+    if (!state) return;
+    if (type === 'start') {
+        state.paused = true;
+        clearTimeout(state.resumeTimer);
+    } else {
+        state.resumeTimer = setTimeout(() => { state.paused = false; }, 3000);
+    }
+}
+
+onMounted(() => {
+    setTimeout(() => {
+        // Only auto-scroll if the element is actually scrollable (mobile)
+        if (servicesCarousel.value && servicesCarousel.value.scrollWidth > servicesCarousel.value.clientWidth) {
+            initCarousel('services', servicesCarousel.value);
+        }
+        if (testimonialsCarousel.value && testimonialsCarousel.value.scrollWidth > testimonialsCarousel.value.clientWidth) {
+            initCarousel('testimonials', testimonialsCarousel.value);
+        }
+    }, 500);
+});
+
+onUnmounted(() => {
+    Object.values(carousels).forEach(s => cancelAnimationFrame(s.raf));
 });
 
 const quickForm = useForm({
@@ -238,13 +289,16 @@ const testimonials = [
                     </p>
                 </div>
 
-                <!-- Service Cards with Images -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
+                <!-- Service Cards - Carousel on mobile, Grid on desktop -->
+                <div ref="servicesCarousel"
+                     @touchstart="onCarouselTouch('services', 'start')"
+                     @touchend="onCarouselTouch('services', 'end')"
+                     class="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 overflow-x-auto md:overflow-visible scrollbar-hide pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
                     <Link
                         v-for="(service, index) in services.slice(0, 6)"
                         :key="service.slug"
                         :href="localePath(`/diensten/${service.slug}`)"
-                        class="group relative bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 md:hover:-translate-y-2 active:scale-[0.98]"
+                        class="group relative bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 md:hover:-translate-y-2 active:scale-[0.98] flex-shrink-0 w-[75vw] md:w-auto"
                     >
                         <!-- Service Image -->
                         <div class="relative h-44 md:h-56 overflow-hidden">
@@ -293,49 +347,76 @@ const testimonials = [
         </section>
 
         <!-- ============================================ -->
-        <!-- WHY CHOOSE US - With big image               -->
+        <!-- WHY CHOOSE US                                -->
         <!-- ============================================ -->
         <section class="py-14 md:py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
             <div class="max-w-7xl mx-auto">
-                <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-                    <!-- Image Side -->
-                    <div class="relative order-2 lg:order-1">
-                        <div class="absolute -inset-3 md:-inset-4 bg-primary-100 rounded-2xl md:rounded-3xl -rotate-3"></div>
-                        <img src="/images/hero/why.jpg" alt="Professionele schoonmaak team" class="relative rounded-2xl md:rounded-3xl shadow-2xl w-full h-[280px] md:h-[400px] lg:h-[500px] object-cover" loading="lazy">
-                        <!-- Floating stats card -->
-                        <div class="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 bg-white rounded-xl md:rounded-2xl shadow-xl p-4 md:p-6 border border-gray-100">
-                            <div class="flex items-center space-x-3 md:space-x-4">
-                                <div class="w-10 h-10 md:w-14 md:h-14 bg-green-100 rounded-lg md:rounded-xl flex items-center justify-center">
-                                    <svg class="w-6 h-6 md:w-8 md:h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Header -->
+                <div class="text-center mb-8 md:mb-16">
+                    <span class="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary-100 text-primary-600 font-semibold text-xs md:text-sm rounded-full mb-3 md:mb-4">Duogroep</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-900 leading-tight">
+                        {{ t('why_title') }}
+                    </h2>
+                    <p class="text-sm md:text-lg text-gray-500 mt-2 md:mt-4 max-w-2xl mx-auto hidden md:block">{{ t('why_subtitle') }}</p>
+                </div>
+
+                <!-- Mobile: Image + 3-column grid -->
+                <div class="md:hidden">
+                    <div class="relative mb-6 rounded-2xl overflow-hidden">
+                        <img src="/images/hero/why.jpg" alt="Professionele schoonmaak team" class="w-full h-44 object-cover" loading="lazy">
+                        <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-1.5 flex items-center gap-2">
+                            <div class="w-6 h-6 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-3.5 h-3.5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-bold text-gray-900">100% {{ t('hero_badge_satisfaction') }}</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div v-for="reason in whyReasons" :key="reason.key"
+                             class="flex flex-col items-center text-center p-3 rounded-2xl bg-gray-50">
+                            <div class="w-10 h-10 rounded-xl bg-primary-500 flex items-center justify-center mb-2.5">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="reason.icon"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-[11px] font-bold text-gray-900 leading-tight">{{ t(reason.key) }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop: Image + list layout -->
+                <div class="hidden md:grid md:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-primary-100 rounded-3xl -rotate-3"></div>
+                        <img src="/images/hero/why.jpg" alt="Professionele schoonmaak team" class="relative rounded-3xl shadow-2xl w-full h-[400px] lg:h-[500px] object-cover" loading="lazy">
+                        <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                     </svg>
                                 </div>
                                 <div>
-                                    <div class="text-xl md:text-2xl font-bold text-gray-900">100%</div>
-                                    <div class="text-xs md:text-sm text-gray-500">{{ t('hero_badge_satisfaction') }}</div>
+                                    <div class="text-2xl font-bold text-gray-900">100%</div>
+                                    <div class="text-sm text-gray-500">{{ t('hero_badge_satisfaction') }}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Content Side -->
-                    <div class="order-1 lg:order-2">
-                        <span class="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary-100 text-primary-600 font-semibold text-xs md:text-sm rounded-full mb-3 md:mb-4">Duogroep</span>
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-900 mb-4 md:mb-6 leading-tight">
-                            {{ t('why_title') }}
-                        </h2>
-                        <p class="text-base md:text-lg text-gray-500 mb-6 md:mb-10">{{ t('why_subtitle') }}</p>
-
-                        <div class="space-y-4 md:space-y-6">
-                            <div v-for="reason in whyReasons" :key="reason.key" class="flex items-start space-x-3 md:space-x-4 group">
-                                <div class="w-11 h-11 md:w-14 md:h-14 bg-primary-50 rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-500 transition-colors duration-300">
-                                    <svg class="w-5 h-5 md:w-7 md:h-7 text-primary-500 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div>
+                        <div class="grid grid-cols-1 gap-5">
+                            <div v-for="reason in whyReasons" :key="reason.key"
+                                 class="flex items-start gap-4 group rounded-xl p-3 hover:bg-primary-50 transition-colors duration-300">
+                                <div class="w-12 h-12 rounded-xl bg-primary-50 group-hover:bg-primary-500 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                                    <svg class="w-6 h-6 text-primary-500 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="reason.icon"/>
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="text-base md:text-lg font-bold text-gray-900 mb-0.5 md:mb-1">{{ t(reason.key) }}</h3>
-                                    <p class="text-sm md:text-base text-gray-500">{{ t(reason.descKey) }}</p>
+                                    <h3 class="text-lg font-bold text-gray-900 leading-tight">{{ t(reason.key) }}</h3>
+                                    <p class="text-sm text-gray-500 leading-snug mt-0.5">{{ t(reason.descKey) }}</p>
                                 </div>
                             </div>
                         </div>
@@ -388,9 +469,12 @@ const testimonials = [
                     </h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
+                <div ref="testimonialsCarousel"
+                     @touchstart="onCarouselTouch('testimonials', 'start')"
+                     @touchend="onCarouselTouch('testimonials', 'end')"
+                     class="flex md:grid md:grid-cols-3 gap-5 md:gap-8 overflow-x-auto md:overflow-visible scrollbar-hide pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
                     <div v-for="(testimonial, index) in testimonials" :key="testimonial.name"
-                         class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 md:hover:-translate-y-1 relative">
+                         class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 md:hover:-translate-y-1 relative flex-shrink-0 w-[80vw] md:w-auto">
                         <!-- Quote mark -->
                         <div class="absolute top-4 right-4 md:top-6 md:right-6 text-5xl md:text-6xl font-serif text-primary-100 leading-none">"</div>
 
@@ -418,42 +502,63 @@ const testimonials = [
         </section>
 
         <!-- ============================================ -->
-        <!-- ZONE SECTION - With map visual               -->
+        <!-- ZONE SECTION - Google Maps                   -->
         <!-- ============================================ -->
-        <section class="py-14 md:py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white">
+        <section class="py-14 md:py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50">
             <div class="max-w-7xl mx-auto">
-                <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-                    <div>
-                        <span class="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary-100 text-primary-600 font-semibold text-xs md:text-sm rounded-full mb-3 md:mb-4">📍 Antwerpen</span>
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-900 mb-3 md:mb-4 leading-tight">
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <!-- Map -->
+                    <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl order-2 lg:order-1">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80192.77!2d4.3517!3d51.2194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f68683bbb1c1%3A0x40099ab2f4d6970!2sAntwerpen!5e0!3m2!1snl!2sbe!4v1"
+                            class="w-full h-[280px] md:h-[420px] lg:h-[460px] border-0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="order-1 lg:order-2">
+                        <span class="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 bg-primary-100 text-primary-600 font-semibold text-xs md:text-sm rounded-full mb-3 md:mb-4">
+                            <svg class="w-3.5 h-3.5 md:w-4 md:h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            Antwerpen
+                        </span>
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-900 mb-3 md:mb-4 leading-tight">
                             {{ t('zone_title') }}
                         </h2>
-                        <p class="text-base md:text-lg text-primary-500 font-semibold mb-3 md:mb-4">
+                        <p class="text-sm md:text-lg text-primary-500 font-semibold mb-2 md:mb-3">
                             {{ t('zone_subtitle') }}
                         </p>
-                        <p class="text-sm md:text-lg text-gray-500 leading-relaxed mb-6 md:mb-8">
+                        <p class="text-sm md:text-base text-gray-500 leading-relaxed mb-6 md:mb-8">
                             {{ t('zone_description') }}
                         </p>
-                        <Link :href="localePath('/contact')" class="btn-primary !rounded-2xl">
-                            {{ t('nav_contact') }}
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                            </svg>
-                        </Link>
-                    </div>
-                    <div class="relative">
-                        <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl md:rounded-3xl p-5 md:p-10 border border-primary-100">
-                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-3">
-                                <span v-for="(city, i) in ['Antwerpen', 'Berchem', 'Borgerhout', 'Deurne', 'Merksem', 'Hoboken', 'Wilrijk', 'Mortsel', 'Edegem', 'Kontich', 'Schoten', 'Brasschaat']"
-                                      :key="city"
-                                      :class="[
-                                          'px-2 py-2.5 md:px-3 md:py-3 rounded-lg md:rounded-xl text-xs md:text-sm font-semibold text-center transition-all duration-300 md:hover:scale-105 cursor-default',
-                                          i === 0 ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/25' : 'bg-white text-gray-700 shadow-md md:hover:shadow-lg'
-                                      ]"
-                                >
-                                    {{ city }}
-                                </span>
-                            </div>
+
+                        <!-- City pills -->
+                        <div class="flex flex-wrap gap-2 mb-6 md:mb-8">
+                            <span v-for="(city, i) in ['Antwerpen', 'Berchem', 'Borgerhout', 'Deurne', 'Merksem', 'Hoboken', 'Wilrijk', 'Mortsel', 'Edegem', 'Kontich', 'Schoten', 'Brasschaat']"
+                                  :key="city"
+                                  :class="[
+                                      'px-3 py-1.5 rounded-full text-xs font-semibold',
+                                      i === 0 ? 'bg-primary-500 text-white' : 'bg-white text-gray-600 border border-gray-200'
+                                  ]">
+                                {{ city }}
+                            </span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <Link :href="localePath('/offerte')" class="btn-primary">
+                                {{ t('hero_cta_quote') }}
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </Link>
+                            <a href="tel:+32470726137" class="btn-secondary">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                {{ t('hero_cta_call') }}
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -466,7 +571,7 @@ const testimonials = [
         <section class="py-14 md:py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-8 md:mb-12">
-                    <span class="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-accent-100 text-accent-600 font-semibold text-xs md:text-sm rounded-full mb-3 md:mb-4">✉ Contact</span>
+                    <span class="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-accent-100 text-accent-600 font-semibold text-xs md:text-sm rounded-full mb-3 md:mb-4">Contact</span>
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-900 mb-3 md:mb-4">
                         {{ t('form_title') }}
                     </h2>

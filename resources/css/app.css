@@ -98,6 +98,15 @@
     }
 }
 
+/* === Hide scrollbar for carousels === */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
 /* === Mobile-specific optimizations === */
 @media (max-width: 640px) {
     /* Prevent layout shift from scrollbar */
