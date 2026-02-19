@@ -96,7 +96,7 @@ const testimonials = [
                         class="inline-flex items-center justify-center px-7 py-4 md:px-10 md:py-5 bg-accent-500 text-white font-bold text-base md:text-lg rounded-2xl active:bg-accent-600 md:hover:bg-accent-600 transition-all shadow-xl md:hover:scale-105 active:scale-95">
                         {{ t('hero_cta_quote') }}
                     </button>
-                    <a href="tel:+32470726137"
+                    <a href="tel:+32460977123"
                         class="inline-flex items-center justify-center px-7 py-4 md:px-10 md:py-5 border-2 border-white/30 text-white font-bold text-base md:text-lg rounded-2xl active:bg-white/20 md:hover:bg-white/10 transition-all">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
@@ -149,8 +149,8 @@ const testimonials = [
                             <div class="mt-5 md:mt-6 space-y-3">
                                 <div class="text-center">
                                     <p class="text-primary-200 text-xs md:text-sm mb-1">{{ t('sd_or_call') }}</p>
-                                    <a href="tel:+32470726137" class="text-white hover:text-primary-100 transition-colors font-bold text-lg md:text-xl">
-                                        0470 72 61 37
+                                    <a href="tel:+32460977123" class="text-white hover:text-primary-100 transition-colors font-bold text-lg md:text-xl">
+                                        0460 97 71 23
                                     </a>
                                 </div>
                                 <div class="text-center">
@@ -358,7 +358,7 @@ const testimonials = [
                             class="inline-flex items-center justify-center px-7 py-4 md:px-10 md:py-5 bg-accent-500 text-white font-bold text-base md:text-lg rounded-2xl active:bg-accent-600 md:hover:bg-accent-600 transition-all shadow-xl md:hover:scale-105 active:scale-95">
                             {{ t('cta_button') }}
                         </button>
-                        <a href="tel:+32470726137"
+                        <a href="tel:+32460977123"
                             class="inline-flex items-center justify-center px-7 py-4 md:px-10 md:py-5 border-2 border-white/30 text-white font-bold text-base md:text-lg rounded-2xl active:bg-white/20 md:hover:bg-white/10 transition-all">
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>

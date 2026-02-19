@@ -33,8 +33,8 @@ const contactInfo = [
     },
     {
         key: 'contact_phone',
-        value: '0470 72 61 37',
-        link: 'tel:+32470726137',
+        value: '0460 97 71 23',
+        link: 'tel:+32460977123',
         icon: 'phone',
     },
     {

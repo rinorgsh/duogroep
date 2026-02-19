@@ -26,7 +26,7 @@
         "@type": "CleaningService",
         "name": "Duogroep",
         "description": "Professioneel schoonmaakbedrijf in Antwerpen. Clean, Fresh and Shiny. Kantoren, gebouwen, industrieel en meer.",
-        "telephone": "+32470726137",
+        "telephone": "+32460977123",
         "email": "duogroep@gmail.com",
         "address": {
             "@type": "PostalAddress",
