@@ -66,7 +66,7 @@ onUnmounted(() => {
             <div class="flex justify-between items-center h-16 lg:h-20">
                 <!-- Logo -->
                 <Link :href="localePath('/')" class="flex items-center flex-shrink-0">
-                    <img src="/images/logo.png" alt="Duogroep" class="h-5 lg:h-7 w-auto block">
+                    <img src="/images/logo.png" alt="Duogroep" class="h-8 lg:h-10 w-auto block">
                 </Link>
 
                 <!-- Desktop Navigation -->

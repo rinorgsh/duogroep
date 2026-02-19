@@ -9,7 +9,7 @@ return [
     'nav_quote' => 'Offerte aanvragen',
 
     // Hero Section
-    'hero_title' => 'Professionele Schoonmaak in Antwerpen',
+    'hero_title' => 'Professionele Schoonmaak in heel Vlaanderen',
     'hero_subtitle' => 'Duogroep zorgt voor een vlekkeloze werkplek. Betrouwbaar, grondig en altijd stipt. Al meer dan 10 jaar uw partner in professioneel onderhoud.',
     'hero_cta_quote' => 'Vraag offerte aan',
     'hero_cta_call' => 'Bel ons nu',
@@ -18,7 +18,7 @@ return [
     'hero_badge_satisfaction' => '100% Tevredenheid',
 
     // Social Proof
-    'social_proof_title' => 'Vertrouwd door bedrijven in heel Antwerpen',
+    'social_proof_title' => 'Vertrouwd door bedrijven in heel Vlaanderen',
     'stats_years' => 'Jaar ervaring',
     'stats_clients' => 'Tevreden klanten',
     'stats_projects' => 'Projecten voltooid',
@@ -54,9 +54,9 @@ return [
 
     // Why Choose Us
     'why_title' => 'Waarom Duogroep kiezen?',
-    'why_subtitle' => 'Ontdek waarom honderden bedrijven in Antwerpen voor ons kiezen.',
+    'why_subtitle' => 'Ontdek waarom honderden bedrijven in Vlaanderen voor ons kiezen.',
     'why_experience' => 'Jarenlange ervaring',
-    'why_experience_desc' => 'Meer dan 10 jaar expertise in professionele schoonmaak in de regio Antwerpen.',
+    'why_experience_desc' => 'Meer dan 10 jaar expertise in professionele schoonmaak in heel Vlaanderen.',
     'why_quality' => 'Gegarandeerde kwaliteit',
     'why_quality_desc' => 'Wij gebruiken professionele producten en technieken voor een onberispelijk resultaat.',
     'why_flexible' => 'Flexibele planning',
@@ -69,9 +69,9 @@ return [
     'why_price_desc' => 'Transparante tarieven zonder verborgen kosten. Gratis offerte op maat.',
 
     // Zone Section
-    'zone_title' => 'Ons werkgebied',
-    'zone_subtitle' => 'Wij zijn actief in Antwerpen en omgeving',
-    'zone_description' => 'Duogroep bedient klanten in Antwerpen-centrum, Berchem, Borgerhout, Deurne, Merksem, Hoboken, Wilrijk, Mortsel, Edegem, Kontich, Schoten, Brasschaat, Kapellen en andere gemeenten in de provincie Antwerpen.',
+    'zone_title' => 'Actief in heel Vlaanderen',
+    'zone_subtitle' => 'Van Antwerpen tot Gent, Brussel tot Leuven — wij komen naar u toe',
+    'zone_description' => 'Duogroep is actief in heel Vlaanderen. Wij bedienen klanten in Antwerpen, Gent, Brussel, Leuven, Mechelen, Brugge, Hasselt, Turnhout, Sint-Niklaas, Aalst en alle gemeenten daartussen. Waar u ook gevestigd bent, wij staan voor u klaar.',
 
     // Quick Form
     'form_title' => 'Vraag een gratis offerte aan',
@@ -133,7 +133,7 @@ return [
     'thanks_back' => 'Terug naar de homepage',
 
     // Footer
-    'footer_description' => 'Professioneel schoonmaakbedrijf in Antwerpen. Betrouwbaar, grondig en altijd stipt.',
+    'footer_description' => 'Professioneel schoonmaakbedrijf actief in heel Vlaanderen. Betrouwbaar, grondig en altijd stipt.',
     'footer_services' => 'Diensten',
     'footer_company' => 'Bedrijf',
     'footer_contact' => 'Contact',
@@ -154,7 +154,7 @@ return [
     'terms_title' => 'Algemene Voorwaarden',
 
     // Service Detail
-    'sd_in_antwerp' => 'in Antwerpen',
+    'sd_in_antwerp' => 'in Vlaanderen',
     'sd_advantages_title' => 'Voordelen van onze dienst',
     'sd_advantages_subtitle' => 'Waarom klanten voor Duogroep kiezen',
     'sd_other_services_title' => 'Andere diensten',
@@ -174,14 +174,14 @@ return [
     'process_step_4_desc' => 'Ons professioneel team voert de werkzaamheden uit met oog voor detail.',
 
     // Long Descriptions
-    'service_offices_long_desc' => 'Een schoon kantoor is essentieel voor de productiviteit en het welzijn van uw medewerkers. Duogroep biedt dagelijks, wekelijks of periodiek kantooronderhoud aan in Antwerpen en omgeving. Van bureaus en vergaderzalen tot keukens en sanitair — wij zorgen voor een hygiënische en aangename werkomgeving. Onze teams werken discreet en efficiënt, aangepast aan uw openingsuren.',
-    'service_construction_long_desc' => 'Na bouw- of renovatiewerken blijft er altijd veel stof, puin en vuil achter. Duogroep maakt uw ruimte instapklaar met een grondige schoonmaak na verbouwing. Wij verwijderen bouwstof, cementresten, verfsporen en ander vuil zodat u meteen kunt genieten van uw gerenoveerde ruimte. Ideaal voor aannemers, projectontwikkelaars en particulieren in Antwerpen.',
+    'service_offices_long_desc' => 'Een schoon kantoor is essentieel voor de productiviteit en het welzijn van uw medewerkers. Duogroep biedt dagelijks, wekelijks of periodiek kantooronderhoud aan in heel Vlaanderen. Van bureaus en vergaderzalen tot keukens en sanitair — wij zorgen voor een hygiënische en aangename werkomgeving. Onze teams werken discreet en efficiënt, aangepast aan uw openingsuren.',
+    'service_construction_long_desc' => 'Na bouw- of renovatiewerken blijft er altijd veel stof, puin en vuil achter. Duogroep maakt uw ruimte instapklaar met een grondige schoonmaak na verbouwing. Wij verwijderen bouwstof, cementresten, verfsporen en ander vuil zodat u meteen kunt genieten van uw gerenoveerde ruimte. Ideaal voor aannemers, projectontwikkelaars en particulieren in heel Vlaanderen.',
     'service_windows_long_desc' => 'Heldere ramen maken een wereld van verschil voor de uitstraling van uw gebouw. Onze professionele glazenwassers reinigen ramen, glazen gevels, dakramen en andere glaspartijen tot in de puntjes. Met professioneel materiaal en ervaren vakmensen garanderen wij een streeploos resultaat, zowel aan de binnen- als buitenzijde.',
     'service_industrial_long_desc' => 'Industriële ruimtes vereisen gespecialiseerde schoonmaaktechnieken en apparatuur. Duogroep is gespecialiseerd in de reiniging van fabrieken, magazijnen, productiehallen en werkplaatsen. Wij werken volgens de strengste veiligheids- en hygiënenormen en beschikken over het juiste materiaal voor elke industriële omgeving.',
-    'service_buildings_long_desc' => 'Het onderhoud van gemeenschappelijke ruimtes in appartementsgebouwen is cruciaal voor de leefbaarheid en waarde van uw eigendom. Duogroep verzorgt de schoonmaak van trappenhuizen, gangen, liften, inkomhallen en andere gemeenschappelijke delen. Wij bieden flexibele contracten aan voor syndici en beheerders in Antwerpen.',
+    'service_buildings_long_desc' => 'Het onderhoud van gemeenschappelijke ruimtes in appartementsgebouwen is cruciaal voor de leefbaarheid en waarde van uw eigendom. Duogroep verzorgt de schoonmaak van trappenhuizen, gangen, liften, inkomhallen en andere gemeenschappelijke delen. Wij bieden flexibele contracten aan voor syndici en beheerders in heel Vlaanderen.',
     'service_schools_long_desc' => 'Een hygiënische schoolomgeving is van het grootste belang voor de gezondheid van leerlingen en personeel. Duogroep biedt professionele schoonmaak aan voor scholen, universiteiten en opleidingscentra. Van klaslokalen en gangen tot sportzalen en sanitaire blokken — wij garanderen een grondige en veilige reiniging.',
     'service_horeca_long_desc' => 'In de horecasector zijn hygiëne en netheid van vitaal belang. Duogroep reinigt restaurants, hotels, cafés en cateringbedrijven volgens de HACCP-normen. Van keukens en eetruimtes tot kamers en sanitair — wij zorgen ervoor dat uw zaak altijd een onberispelijke indruk maakt op uw gasten.',
-    'service_apartments_long_desc' => 'Of het nu gaat om een verhuis, een bezichtiging of periodiek onderhoud — Duogroep zorgt voor een brandschoon appartement. Wij bieden grondige schoonmaak bij in- en uittrede, opfrisbeurt voor bezichtigingen en regelmatig onderhoud voor verhuurders en eigenaars in de regio Antwerpen.',
+    'service_apartments_long_desc' => 'Of het nu gaat om een verhuis, een bezichtiging of periodiek onderhoud — Duogroep zorgt voor een brandschoon appartement. Wij bieden grondige schoonmaak bij in- en uittrede, opfrisbeurt voor bezichtigingen en regelmatig onderhoud voor verhuurders en eigenaars in heel Vlaanderen.',
     'service_parking_long_desc' => 'Parkeergarages worden vaak vergeten bij het schoonmaakonderhoud, maar een propere parking draagt bij aan de veiligheid en de uitstraling van uw gebouw. Duogroep reinigt ondergrondse en bovengrondse parkings met industriële veegmachines en hogedrukreinigers voor een optimaal resultaat.',
     'service_deep_long_desc' => 'Soms is een gewone schoonmaak niet voldoende en is een grondige dieptereiniging nodig. Duogroep biedt intensieve schoonmaakdiensten aan voor kantoren, winkels, woningen en andere ruimtes. Ideaal voor seizoensgebonden groot onderhoud, na een lange periode zonder schoonmaak of als voorbereiding op een evenement.',
 
@@ -193,14 +193,14 @@ return [
     'form_sending' => 'Verzenden...',
 
     // Meta
-    'meta_home_title' => 'Professioneel Schoonmaakbedrijf Antwerpen',
-    'meta_home_description' => 'Duogroep - Professioneel schoonmaakbedrijf in Antwerpen. Kantoren, gebouwen, industrieel, horeca en meer. Gratis offerte. 24/7 beschikbaar.',
+    'meta_home_title' => 'Professioneel Schoonmaakbedrijf Vlaanderen',
+    'meta_home_description' => 'Duogroep - Professioneel schoonmaakbedrijf actief in heel Vlaanderen. Kantoren, gebouwen, industrieel, horeca en meer. Gratis offerte. 24/7 beschikbaar.',
     'meta_services_title' => 'Onze Schoonmaakdiensten',
-    'meta_services_description' => 'Ontdek ons volledige gamma aan professionele schoonmaakdiensten in Antwerpen.',
+    'meta_services_description' => 'Ontdek ons volledige gamma aan professionele schoonmaakdiensten in heel Vlaanderen.',
     'meta_about_title' => 'Over Duogroep',
-    'meta_about_description' => 'Leer meer over Duogroep, uw betrouwbare partner voor professionele schoonmaak in Antwerpen.',
+    'meta_about_description' => 'Leer meer over Duogroep, uw betrouwbare partner voor professionele schoonmaak in heel Vlaanderen.',
     'meta_contact_title' => 'Contact - Duogroep',
-    'meta_contact_description' => 'Neem contact op met Duogroep voor al uw schoonmaakvragen in Antwerpen.',
+    'meta_contact_description' => 'Neem contact op met Duogroep voor al uw schoonmaakvragen in Vlaanderen.',
     'meta_quote_title' => 'Offerte Aanvragen',
-    'meta_quote_description' => 'Vraag een gratis offerte aan voor professionele schoonmaak in Antwerpen. Snel antwoord gegarandeerd.',
+    'meta_quote_description' => 'Vraag een gratis offerte aan voor professionele schoonmaak in Vlaanderen. Snel antwoord gegarandeerd.',
 ];

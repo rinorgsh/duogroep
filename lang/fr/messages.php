@@ -9,7 +9,7 @@ return [
     'nav_quote' => 'Demander un devis',
 
     // Hero Section
-    'hero_title' => 'Nettoyage Professionnel à Anvers',
+    'hero_title' => 'Nettoyage Professionnel dans toute la Flandre',
     'hero_subtitle' => 'Duogroep assure un espace de travail impeccable. Fiable, minutieux et toujours ponctuel. Votre partenaire en entretien professionnel depuis plus de 10 ans.',
     'hero_cta_quote' => 'Demander un devis',
     'hero_cta_call' => 'Appelez-nous',
@@ -18,7 +18,7 @@ return [
     'hero_badge_satisfaction' => '100% Satisfaction',
 
     // Social Proof
-    'social_proof_title' => 'La confiance des entreprises à travers Anvers',
+    'social_proof_title' => 'La confiance des entreprises dans toute la Flandre',
     'stats_years' => "Années d'expérience",
     'stats_clients' => 'Clients satisfaits',
     'stats_projects' => 'Projets réalisés',
@@ -54,9 +54,9 @@ return [
 
     // Why Choose Us
     'why_title' => 'Pourquoi choisir Duogroep ?',
-    'why_subtitle' => 'Découvrez pourquoi des centaines d\'entreprises à Anvers nous font confiance.',
+    'why_subtitle' => 'Découvrez pourquoi des centaines d\'entreprises en Flandre nous font confiance.',
     'why_experience' => "Des années d'expérience",
-    'why_experience_desc' => "Plus de 10 ans d'expertise en nettoyage professionnel dans la région d'Anvers.",
+    'why_experience_desc' => "Plus de 10 ans d'expertise en nettoyage professionnel dans toute la Flandre.",
     'why_quality' => 'Qualité garantie',
     'why_quality_desc' => 'Nous utilisons des produits et techniques professionnels pour un résultat irréprochable.',
     'why_flexible' => 'Planning flexible',
@@ -69,9 +69,9 @@ return [
     'why_price_desc' => 'Tarifs transparents sans frais cachés. Devis gratuit et personnalisé.',
 
     // Zone Section
-    'zone_title' => 'Notre zone d\'intervention',
-    'zone_subtitle' => 'Nous sommes actifs à Anvers et ses environs',
-    'zone_description' => 'Duogroep dessert des clients à Anvers-centre, Berchem, Borgerhout, Deurne, Merksem, Hoboken, Wilrijk, Mortsel, Edegem, Kontich, Schoten, Brasschaat, Kapellen et d\'autres communes de la province d\'Anvers.',
+    'zone_title' => 'Actifs dans toute la Flandre',
+    'zone_subtitle' => 'D\'Anvers à Gand, de Bruxelles à Louvain — nous venons à vous',
+    'zone_description' => 'Duogroep est actif dans toute la Flandre. Nous desservons des clients à Anvers, Gand, Bruxelles, Louvain, Malines, Bruges, Hasselt, Turnhout, Saint-Nicolas, Alost et toutes les communes entre les deux. Où que vous soyez, nous sommes là pour vous.',
 
     // Quick Form
     'form_title' => 'Demandez un devis gratuit',
@@ -113,7 +113,7 @@ return [
     // About Page
     'about_title' => 'À propos de Duogroep',
     'about_subtitle' => 'Votre partenaire fiable en entretien professionnel',
-    'about_intro' => 'Duogroep est une entreprise de nettoyage de premier plan basée à Anvers. Avec des années d\'expérience et une équipe de professionnels dévoués, nous fournissons des services de nettoyage exceptionnels aux entreprises et particuliers de la région.',
+    'about_intro' => 'Duogroep est une entreprise de nettoyage de premier plan basée en Flandre. Avec des années d\'expérience et une équipe de professionnels dévoués, nous fournissons des services de nettoyage exceptionnels aux entreprises et particuliers de la région.',
     'about_mission_title' => 'Notre Mission',
     'about_mission' => 'Rendre chaque espace plus propre, plus sain et plus agréable grâce à un entretien professionnel de la plus haute qualité.',
     'about_values_title' => 'Nos Valeurs',
@@ -133,7 +133,7 @@ return [
     'thanks_back' => 'Retour à la page d\'accueil',
 
     // Footer
-    'footer_description' => 'Entreprise de nettoyage professionnel à Anvers. Fiable, minutieux et toujours ponctuel.',
+    'footer_description' => 'Entreprise de nettoyage professionnel active dans toute la Flandre. Fiable, minutieux et toujours ponctuel.',
     'footer_services' => 'Services',
     'footer_company' => 'Entreprise',
     'footer_contact' => 'Contact',
@@ -154,7 +154,7 @@ return [
     'terms_title' => 'Conditions Générales',
 
     // Service Detail
-    'sd_in_antwerp' => 'à Anvers',
+    'sd_in_antwerp' => 'en Flandre',
     'sd_advantages_title' => 'Avantages de notre service',
     'sd_advantages_subtitle' => 'Pourquoi les clients choisissent Duogroep',
     'sd_other_services_title' => 'Autres services',
@@ -174,14 +174,14 @@ return [
     'process_step_4_desc' => 'Notre équipe professionnelle réalise les travaux avec le souci du détail.',
 
     // Long Descriptions
-    'service_offices_long_desc' => 'Un bureau propre est essentiel pour la productivité et le bien-être de vos collaborateurs. Duogroep propose un entretien quotidien, hebdomadaire ou périodique de vos bureaux à Anvers et environs. Des postes de travail aux salles de réunion, en passant par les cuisines et les sanitaires — nous garantissons un environnement de travail hygiénique et agréable. Nos équipes travaillent discrètement et efficacement, adaptées à vos horaires.',
-    'service_construction_long_desc' => 'Après des travaux de construction ou de rénovation, il reste toujours beaucoup de poussière et de débris. Duogroep rend votre espace prêt à l\'emploi grâce à un nettoyage approfondi après chantier. Nous éliminons la poussière de construction, les résidus de ciment, les traces de peinture et autres salissures. Idéal pour les entrepreneurs, promoteurs et particuliers à Anvers.',
+    'service_offices_long_desc' => 'Un bureau propre est essentiel pour la productivité et le bien-être de vos collaborateurs. Duogroep propose un entretien quotidien, hebdomadaire ou périodique de vos bureaux dans toute la Flandre. Des postes de travail aux salles de réunion, en passant par les cuisines et les sanitaires — nous garantissons un environnement de travail hygiénique et agréable. Nos équipes travaillent discrètement et efficacement, adaptées à vos horaires.',
+    'service_construction_long_desc' => 'Après des travaux de construction ou de rénovation, il reste toujours beaucoup de poussière et de débris. Duogroep rend votre espace prêt à l\'emploi grâce à un nettoyage approfondi après chantier. Nous éliminons la poussière de construction, les résidus de ciment, les traces de peinture et autres salissures. Idéal pour les entrepreneurs, promoteurs et particuliers en Flandre.',
     'service_windows_long_desc' => 'Des vitres propres font toute la différence pour l\'apparence de votre bâtiment. Nos laveurs de vitres professionnels nettoient fenêtres, façades vitrées, velux et autres surfaces vitrées dans les moindres détails. Avec un équipement professionnel et des artisans expérimentés, nous garantissons un résultat sans traces, tant à l\'intérieur qu\'à l\'extérieur.',
     'service_industrial_long_desc' => 'Les espaces industriels nécessitent des techniques et des équipements de nettoyage spécialisés. Duogroep est spécialisé dans le nettoyage d\'usines, d\'entrepôts, de halls de production et d\'ateliers. Nous travaillons selon les normes les plus strictes en matière de sécurité et d\'hygiène et disposons du matériel adapté à chaque environnement industriel.',
-    'service_buildings_long_desc' => 'L\'entretien des parties communes des immeubles résidentiels est crucial pour le cadre de vie et la valeur de votre propriété. Duogroep assure le nettoyage des cages d\'escalier, couloirs, ascenseurs, halls d\'entrée et autres parties communes. Nous proposons des contrats flexibles pour les syndics et gestionnaires à Anvers.',
+    'service_buildings_long_desc' => 'L\'entretien des parties communes des immeubles résidentiels est crucial pour le cadre de vie et la valeur de votre propriété. Duogroep assure le nettoyage des cages d\'escalier, couloirs, ascenseurs, halls d\'entrée et autres parties communes. Nous proposons des contrats flexibles pour les syndics et gestionnaires en Flandre.',
     'service_schools_long_desc' => 'Un environnement scolaire hygiénique est primordial pour la santé des élèves et du personnel. Duogroep propose un nettoyage professionnel pour les écoles, universités et centres de formation. Des salles de classe aux couloirs, en passant par les salles de sport et les blocs sanitaires — nous garantissons un nettoyage approfondi et sûr.',
     'service_horeca_long_desc' => 'Dans le secteur horeca, l\'hygiène et la propreté sont d\'une importance vitale. Duogroep nettoie restaurants, hôtels, cafés et entreprises de catering selon les normes HACCP. Des cuisines aux salles à manger, en passant par les chambres et les sanitaires — nous veillons à ce que votre établissement fasse toujours une impression irréprochable.',
-    'service_apartments_long_desc' => 'Qu\'il s\'agisse d\'un déménagement, d\'une visite ou d\'un entretien périodique — Duogroep assure un appartement impeccable. Nous proposons un nettoyage approfondi à l\'entrée et à la sortie, une remise en état pour les visites et un entretien régulier pour les propriétaires et bailleurs dans la région d\'Anvers.',
+    'service_apartments_long_desc' => 'Qu\'il s\'agisse d\'un déménagement, d\'une visite ou d\'un entretien périodique — Duogroep assure un appartement impeccable. Nous proposons un nettoyage approfondi à l\'entrée et à la sortie, une remise en état pour les visites et un entretien régulier pour les propriétaires et bailleurs dans toute la Flandre.',
     'service_parking_long_desc' => 'Les parkings sont souvent oubliés dans l\'entretien, mais un parking propre contribue à la sécurité et à l\'image de votre bâtiment. Duogroep nettoie les parkings souterrains et extérieurs avec des balayeuses industrielles et des nettoyeurs haute pression pour un résultat optimal.',
     'service_deep_long_desc' => 'Parfois, un nettoyage ordinaire ne suffit pas et un nettoyage en profondeur s\'impose. Duogroep propose des services de nettoyage intensif pour bureaux, commerces, logements et autres espaces. Idéal pour le grand ménage saisonnier, après une longue période sans nettoyage ou en préparation d\'un événement.',
 
@@ -193,14 +193,14 @@ return [
     'form_sending' => 'Envoi en cours...',
 
     // Meta
-    'meta_home_title' => 'Entreprise de Nettoyage Professionnel Anvers',
-    'meta_home_description' => 'Duogroep - Entreprise de nettoyage professionnel à Anvers. Bureaux, bâtiments, industriel, horeca et plus. Devis gratuit. Disponible 24/7.',
+    'meta_home_title' => 'Entreprise de Nettoyage Professionnel Flandre',
+    'meta_home_description' => 'Duogroep - Entreprise de nettoyage professionnel active dans toute la Flandre. Bureaux, bâtiments, industriel, horeca et plus. Devis gratuit. Disponible 24/7.',
     'meta_services_title' => 'Nos Services de Nettoyage',
-    'meta_services_description' => 'Découvrez notre gamme complète de services de nettoyage professionnel à Anvers.',
+    'meta_services_description' => 'Découvrez notre gamme complète de services de nettoyage professionnel en Flandre.',
     'meta_about_title' => 'À propos de Duogroep',
-    'meta_about_description' => 'En savoir plus sur Duogroep, votre partenaire fiable pour le nettoyage professionnel à Anvers.',
+    'meta_about_description' => 'En savoir plus sur Duogroep, votre partenaire fiable pour le nettoyage professionnel en Flandre.',
     'meta_contact_title' => 'Contact - Duogroep',
-    'meta_contact_description' => 'Contactez Duogroep pour toutes vos questions de nettoyage à Anvers.',
+    'meta_contact_description' => 'Contactez Duogroep pour toutes vos questions de nettoyage en Flandre.',
     'meta_quote_title' => 'Demander un Devis',
-    'meta_quote_description' => 'Demandez un devis gratuit pour le nettoyage professionnel à Anvers. Réponse rapide garantie.',
+    'meta_quote_description' => 'Demandez un devis gratuit pour le nettoyage professionnel en Flandre. Réponse rapide garantie.',
 ];

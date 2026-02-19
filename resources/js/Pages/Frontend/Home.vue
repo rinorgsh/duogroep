@@ -513,7 +513,7 @@ const testimonials = [
                     <!-- Map -->
                     <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl order-2 lg:order-1">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80192.77!2d4.3517!3d51.2194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f68683bbb1c1%3A0x40099ab2f4d6970!2sAntwerpen!5e0!3m2!1snl!2sbe!4v1"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d645000!2d4.0!3d51.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c370e3a4e91be1%3A0x75862112e3de573!2sVlaanderen!5e0!3m2!1snl!2sbe!4v1"
                             class="w-full h-[280px] md:h-[420px] lg:h-[460px] border-0"
                             allowfullscreen=""
                             loading="lazy"
@@ -525,7 +525,7 @@ const testimonials = [
                     <div class="order-1 lg:order-2">
                         <span class="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 bg-primary-100 text-primary-600 font-semibold text-xs md:text-sm rounded-full mb-3 md:mb-4">
                             <svg class="w-3.5 h-3.5 md:w-4 md:h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            Antwerpen
+                            Vlaanderen
                         </span>
                         <h2 class="text-2xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-900 mb-3 md:mb-4 leading-tight">
                             {{ t('zone_title') }}
@@ -539,7 +539,7 @@ const testimonials = [
 
                         <!-- City pills -->
                         <div class="flex flex-wrap gap-2 mb-6 md:mb-8">
-                            <span v-for="(city, i) in ['Antwerpen', 'Berchem', 'Borgerhout', 'Deurne', 'Merksem', 'Hoboken', 'Wilrijk', 'Mortsel', 'Edegem', 'Kontich', 'Schoten', 'Brasschaat']"
+                            <span v-for="(city, i) in ['Antwerpen', 'Gent', 'Brussel', 'Leuven', 'Mechelen', 'Brugge', 'Hasselt', 'Turnhout', 'Sint-Niklaas', 'Aalst']"
                                   :key="city"
                                   :class="[
                                       'px-3 py-1.5 rounded-full text-xs font-semibold',

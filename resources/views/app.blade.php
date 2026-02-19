@@ -42,8 +42,8 @@
             "longitude": "4.4025"
         },
         "areaServed": {
-            "@type": "City",
-            "name": "Antwerpen"
+            "@type": "State",
+            "name": "Vlaanderen"
         },
         "priceRange": "€€",
         "openingHoursSpecification": {

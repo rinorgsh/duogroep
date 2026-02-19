@@ -9,7 +9,7 @@ return [
     'nav_quote' => 'Request a quote',
 
     // Hero Section
-    'hero_title' => 'Professional Cleaning in Antwerp',
+    'hero_title' => 'Professional Cleaning across Flanders',
     'hero_subtitle' => 'Duogroep ensures a spotless workplace. Reliable, thorough and always on time. Your partner in professional maintenance for over 10 years.',
     'hero_cta_quote' => 'Request a quote',
     'hero_cta_call' => 'Call us now',
@@ -18,7 +18,7 @@ return [
     'hero_badge_satisfaction' => '100% Satisfaction',
 
     // Social Proof
-    'social_proof_title' => 'Trusted by businesses across Antwerp',
+    'social_proof_title' => 'Trusted by businesses across Flanders',
     'stats_years' => 'Years of experience',
     'stats_clients' => 'Happy clients',
     'stats_projects' => 'Projects completed',
@@ -54,9 +54,9 @@ return [
 
     // Why Choose Us
     'why_title' => 'Why choose Duogroep?',
-    'why_subtitle' => 'Discover why hundreds of businesses in Antwerp choose us.',
+    'why_subtitle' => 'Discover why hundreds of businesses across Flanders choose us.',
     'why_experience' => 'Years of experience',
-    'why_experience_desc' => 'Over 10 years of expertise in professional cleaning in the Antwerp region.',
+    'why_experience_desc' => 'Over 10 years of expertise in professional cleaning across Flanders.',
     'why_quality' => 'Guaranteed quality',
     'why_quality_desc' => 'We use professional products and techniques for an impeccable result.',
     'why_flexible' => 'Flexible scheduling',
@@ -69,9 +69,9 @@ return [
     'why_price_desc' => 'Transparent rates with no hidden costs. Free customised quote.',
 
     // Zone Section
-    'zone_title' => 'Our service area',
-    'zone_subtitle' => 'We are active in Antwerp and surroundings',
-    'zone_description' => 'Duogroep serves clients in Antwerp city centre, Berchem, Borgerhout, Deurne, Merksem, Hoboken, Wilrijk, Mortsel, Edegem, Kontich, Schoten, Brasschaat, Kapellen and other municipalities in the province of Antwerp.',
+    'zone_title' => 'Active across all of Flanders',
+    'zone_subtitle' => 'From Antwerp to Ghent, Brussels to Leuven — we come to you',
+    'zone_description' => 'Duogroep is active throughout Flanders. We serve clients in Antwerp, Ghent, Brussels, Leuven, Mechelen, Bruges, Hasselt, Turnhout, Sint-Niklaas, Aalst and all municipalities in between. Wherever you are located, we are ready for you.',
 
     // Quick Form
     'form_title' => 'Request a free quote',
@@ -113,7 +113,7 @@ return [
     // About Page
     'about_title' => 'About Duogroep',
     'about_subtitle' => 'Your reliable partner in professional maintenance',
-    'about_intro' => 'Duogroep is a leading cleaning company based in Antwerp. With years of experience and a team of dedicated professionals, we deliver exceptional cleaning services to businesses and individuals in the region.',
+    'about_intro' => 'Duogroep is a leading cleaning company based across Flanders. With years of experience and a team of dedicated professionals, we deliver exceptional cleaning services to businesses and individuals in the region.',
     'about_mission_title' => 'Our Mission',
     'about_mission' => 'To make every space cleaner, healthier and more pleasant through professional maintenance of the highest quality.',
     'about_values_title' => 'Our Values',
@@ -133,7 +133,7 @@ return [
     'thanks_back' => 'Back to the homepage',
 
     // Footer
-    'footer_description' => 'Professional cleaning company in Antwerp. Reliable, thorough and always on time.',
+    'footer_description' => 'Professional cleaning company active across Flanders. Reliable, thorough and always on time.',
     'footer_services' => 'Services',
     'footer_company' => 'Company',
     'footer_contact' => 'Contact',
@@ -154,7 +154,7 @@ return [
     'terms_title' => 'Terms & Conditions',
 
     // Service Detail
-    'sd_in_antwerp' => 'in Antwerp',
+    'sd_in_antwerp' => 'in Flanders',
     'sd_advantages_title' => 'Advantages of our service',
     'sd_advantages_subtitle' => 'Why clients choose Duogroep',
     'sd_other_services_title' => 'Other services',
@@ -174,14 +174,14 @@ return [
     'process_step_4_desc' => 'Our professional team carries out the work with attention to detail.',
 
     // Long Descriptions
-    'service_offices_long_desc' => 'A clean office is essential for the productivity and well-being of your employees. Duogroep offers daily, weekly or periodic office maintenance in Antwerp and the surrounding area. From desks and meeting rooms to kitchens and sanitary facilities — we ensure a hygienic and pleasant working environment. Our teams work discreetly and efficiently, adapted to your opening hours.',
-    'service_construction_long_desc' => 'After construction or renovation work, there is always a lot of dust, debris and dirt left behind. Duogroep makes your space move-in ready with a thorough post-construction cleaning. We remove construction dust, cement residues, paint traces and other dirt so you can immediately enjoy your renovated space. Ideal for contractors, developers and individuals in Antwerp.',
+    'service_offices_long_desc' => 'A clean office is essential for the productivity and well-being of your employees. Duogroep offers daily, weekly or periodic office maintenance across Flanders. From desks and meeting rooms to kitchens and sanitary facilities — we ensure a hygienic and pleasant working environment. Our teams work discreetly and efficiently, adapted to your opening hours.',
+    'service_construction_long_desc' => 'After construction or renovation work, there is always a lot of dust, debris and dirt left behind. Duogroep makes your space move-in ready with a thorough post-construction cleaning. We remove construction dust, cement residues, paint traces and other dirt so you can immediately enjoy your renovated space. Ideal for contractors, developers and individuals across Flanders.',
     'service_windows_long_desc' => 'Clean windows make a world of difference to the appearance of your building. Our professional window cleaners clean windows, glass facades, skylights and other glass surfaces to perfection. With professional equipment and experienced craftsmen, we guarantee a streak-free result, both inside and outside.',
     'service_industrial_long_desc' => 'Industrial spaces require specialised cleaning techniques and equipment. Duogroep specialises in the cleaning of factories, warehouses, production halls and workshops. We work according to the strictest safety and hygiene standards and have the right equipment for every industrial environment.',
-    'service_buildings_long_desc' => 'Maintaining common areas in apartment buildings is crucial for the liveability and value of your property. Duogroep takes care of cleaning stairwells, corridors, lifts, entrance halls and other communal areas. We offer flexible contracts for building managers and administrators in Antwerp.',
+    'service_buildings_long_desc' => 'Maintaining common areas in apartment buildings is crucial for the liveability and value of your property. Duogroep takes care of cleaning stairwells, corridors, lifts, entrance halls and other communal areas. We offer flexible contracts for building managers and administrators across Flanders.',
     'service_schools_long_desc' => 'A hygienic school environment is of the utmost importance for the health of pupils and staff. Duogroep offers professional cleaning for schools, universities and training centres. From classrooms and corridors to sports halls and sanitary blocks — we guarantee a thorough and safe cleaning.',
     'service_horeca_long_desc' => 'In the hospitality sector, hygiene and cleanliness are of vital importance. Duogroep cleans restaurants, hotels, cafés and catering companies according to HACCP standards. From kitchens and dining areas to rooms and sanitary facilities — we ensure your establishment always makes an impeccable impression on your guests.',
-    'service_apartments_long_desc' => 'Whether it is a move, a viewing or periodic maintenance — Duogroep ensures a spotless apartment. We offer thorough cleaning at move-in and move-out, freshening up for viewings and regular maintenance for landlords and owners in the Antwerp region.',
+    'service_apartments_long_desc' => 'Whether it is a move, a viewing or periodic maintenance — Duogroep ensures a spotless apartment. We offer thorough cleaning at move-in and move-out, freshening up for viewings and regular maintenance for landlords and owners across Flanders.',
     'service_parking_long_desc' => 'Parking garages are often forgotten in cleaning maintenance, but a clean car park contributes to the safety and appearance of your building. Duogroep cleans underground and above-ground car parks with industrial sweepers and high-pressure cleaners for an optimal result.',
     'service_deep_long_desc' => 'Sometimes a regular cleaning is not sufficient and a thorough deep cleaning is needed. Duogroep offers intensive cleaning services for offices, shops, homes and other spaces. Ideal for seasonal deep maintenance, after a long period without cleaning or in preparation for an event.',
 
@@ -193,14 +193,14 @@ return [
     'form_sending' => 'Sending...',
 
     // Meta
-    'meta_home_title' => 'Professional Cleaning Company Antwerp',
-    'meta_home_description' => 'Duogroep - Professional cleaning company in Antwerp. Offices, buildings, industrial, hospitality and more. Free quote. Available 24/7.',
+    'meta_home_title' => 'Professional Cleaning Company Flanders',
+    'meta_home_description' => 'Duogroep - Professional cleaning company active across Flanders. Offices, buildings, industrial, hospitality and more. Free quote. Available 24/7.',
     'meta_services_title' => 'Our Cleaning Services',
-    'meta_services_description' => 'Discover our complete range of professional cleaning services in Antwerp.',
+    'meta_services_description' => 'Discover our complete range of professional cleaning services across Flanders.',
     'meta_about_title' => 'About Duogroep',
-    'meta_about_description' => 'Learn more about Duogroep, your reliable partner for professional cleaning in Antwerp.',
+    'meta_about_description' => 'Learn more about Duogroep, your reliable partner for professional cleaning across Flanders.',
     'meta_contact_title' => 'Contact - Duogroep',
-    'meta_contact_description' => 'Contact Duogroep for all your cleaning questions in Antwerp.',
+    'meta_contact_description' => 'Contact Duogroep for all your cleaning questions across Flanders.',
     'meta_quote_title' => 'Request a Quote',
-    'meta_quote_description' => 'Request a free quote for professional cleaning in Antwerp. Fast response guaranteed.',
+    'meta_quote_description' => 'Request a free quote for professional cleaning across Flanders. Fast response guaranteed.',
 ];
