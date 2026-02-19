@@ -153,6 +153,45 @@ return [
     'privacy_title' => 'Privacy Policy',
     'terms_title' => 'Terms & Conditions',
 
+    // Service Detail
+    'sd_in_antwerp' => 'in Antwerp',
+    'sd_advantages_title' => 'Advantages of our service',
+    'sd_advantages_subtitle' => 'Why clients choose Duogroep',
+    'sd_other_services_title' => 'Other services',
+    'sd_or_call' => 'Or call directly:',
+    'sd_or_email' => 'Or email us:',
+
+    // Process
+    'process_title' => 'How do we work?',
+    'process_subtitle' => 'A clean space in 4 simple steps',
+    'process_step_1_title' => 'Contact',
+    'process_step_1_desc' => 'Get in touch by phone, email or the form. We listen to your needs.',
+    'process_step_2_title' => 'Quote',
+    'process_step_2_desc' => 'You receive a free customised quote within 24 hours, with no obligations.',
+    'process_step_3_title' => 'Planning',
+    'process_step_3_desc' => 'We schedule the cleaning at a time that suits you best.',
+    'process_step_4_title' => 'Execution',
+    'process_step_4_desc' => 'Our professional team carries out the work with attention to detail.',
+
+    // Long Descriptions
+    'service_offices_long_desc' => 'A clean office is essential for the productivity and well-being of your employees. Duogroep offers daily, weekly or periodic office maintenance in Antwerp and the surrounding area. From desks and meeting rooms to kitchens and sanitary facilities — we ensure a hygienic and pleasant working environment. Our teams work discreetly and efficiently, adapted to your opening hours.',
+    'service_construction_long_desc' => 'After construction or renovation work, there is always a lot of dust, debris and dirt left behind. Duogroep makes your space move-in ready with a thorough post-construction cleaning. We remove construction dust, cement residues, paint traces and other dirt so you can immediately enjoy your renovated space. Ideal for contractors, developers and individuals in Antwerp.',
+    'service_windows_long_desc' => 'Clean windows make a world of difference to the appearance of your building. Our professional window cleaners clean windows, glass facades, skylights and other glass surfaces to perfection. With professional equipment and experienced craftsmen, we guarantee a streak-free result, both inside and outside.',
+    'service_industrial_long_desc' => 'Industrial spaces require specialised cleaning techniques and equipment. Duogroep specialises in the cleaning of factories, warehouses, production halls and workshops. We work according to the strictest safety and hygiene standards and have the right equipment for every industrial environment.',
+    'service_buildings_long_desc' => 'Maintaining common areas in apartment buildings is crucial for the liveability and value of your property. Duogroep takes care of cleaning stairwells, corridors, lifts, entrance halls and other communal areas. We offer flexible contracts for building managers and administrators in Antwerp.',
+    'service_schools_long_desc' => 'A hygienic school environment is of the utmost importance for the health of pupils and staff. Duogroep offers professional cleaning for schools, universities and training centres. From classrooms and corridors to sports halls and sanitary blocks — we guarantee a thorough and safe cleaning.',
+    'service_horeca_long_desc' => 'In the hospitality sector, hygiene and cleanliness are of vital importance. Duogroep cleans restaurants, hotels, cafés and catering companies according to HACCP standards. From kitchens and dining areas to rooms and sanitary facilities — we ensure your establishment always makes an impeccable impression on your guests.',
+    'service_apartments_long_desc' => 'Whether it is a move, a viewing or periodic maintenance — Duogroep ensures a spotless apartment. We offer thorough cleaning at move-in and move-out, freshening up for viewings and regular maintenance for landlords and owners in the Antwerp region.',
+    'service_parking_long_desc' => 'Parking garages are often forgotten in cleaning maintenance, but a clean car park contributes to the safety and appearance of your building. Duogroep cleans underground and above-ground car parks with industrial sweepers and high-pressure cleaners for an optimal result.',
+    'service_deep_long_desc' => 'Sometimes a regular cleaning is not sufficient and a thorough deep cleaning is needed. Duogroep offers intensive cleaning services for offices, shops, homes and other spaces. Ideal for seasonal deep maintenance, after a long period without cleaning or in preparation for an event.',
+
+    // Testimonials
+    'testimonial_1_text' => 'Duogroep has been maintaining our offices for 3 years and we are very satisfied. Reliable, punctual and always a perfect result. Absolutely recommended!',
+    'testimonial_2_text' => 'After our renovation, Duogroep left everything spotless. Professional team, fair price and excellent communication. Definitely a top company!',
+
+    // Form
+    'form_sending' => 'Sending...',
+
     // Meta
     'meta_home_title' => 'Professional Cleaning Company Antwerp',
     'meta_home_description' => 'Duogroep - Professional cleaning company in Antwerp. Offices, buildings, industrial, hospitality and more. Free quote. Available 24/7.',

@@ -153,6 +153,45 @@ return [
     'privacy_title' => 'Privacybeleid',
     'terms_title' => 'Algemene Voorwaarden',
 
+    // Service Detail
+    'sd_in_antwerp' => 'in Antwerpen',
+    'sd_advantages_title' => 'Voordelen van onze dienst',
+    'sd_advantages_subtitle' => 'Waarom klanten voor Duogroep kiezen',
+    'sd_other_services_title' => 'Andere diensten',
+    'sd_or_call' => 'Of bel direct:',
+    'sd_or_email' => 'Of mail ons:',
+
+    // Process
+    'process_title' => 'Hoe werken wij?',
+    'process_subtitle' => 'In 4 eenvoudige stappen naar een schone ruimte',
+    'process_step_1_title' => 'Contact',
+    'process_step_1_desc' => 'Neem contact op via telefoon, e-mail of het formulier. Wij luisteren naar uw wensen.',
+    'process_step_2_title' => 'Offerte',
+    'process_step_2_desc' => 'U ontvangt binnen 24 uur een gratis offerte op maat, zonder verplichtingen.',
+    'process_step_3_title' => 'Planning',
+    'process_step_3_desc' => 'Wij plannen de schoonmaak in op een moment dat u het beste uitkomt.',
+    'process_step_4_title' => 'Uitvoering',
+    'process_step_4_desc' => 'Ons professioneel team voert de werkzaamheden uit met oog voor detail.',
+
+    // Long Descriptions
+    'service_offices_long_desc' => 'Een schoon kantoor is essentieel voor de productiviteit en het welzijn van uw medewerkers. Duogroep biedt dagelijks, wekelijks of periodiek kantooronderhoud aan in Antwerpen en omgeving. Van bureaus en vergaderzalen tot keukens en sanitair — wij zorgen voor een hygiënische en aangename werkomgeving. Onze teams werken discreet en efficiënt, aangepast aan uw openingsuren.',
+    'service_construction_long_desc' => 'Na bouw- of renovatiewerken blijft er altijd veel stof, puin en vuil achter. Duogroep maakt uw ruimte instapklaar met een grondige schoonmaak na verbouwing. Wij verwijderen bouwstof, cementresten, verfsporen en ander vuil zodat u meteen kunt genieten van uw gerenoveerde ruimte. Ideaal voor aannemers, projectontwikkelaars en particulieren in Antwerpen.',
+    'service_windows_long_desc' => 'Heldere ramen maken een wereld van verschil voor de uitstraling van uw gebouw. Onze professionele glazenwassers reinigen ramen, glazen gevels, dakramen en andere glaspartijen tot in de puntjes. Met professioneel materiaal en ervaren vakmensen garanderen wij een streeploos resultaat, zowel aan de binnen- als buitenzijde.',
+    'service_industrial_long_desc' => 'Industriële ruimtes vereisen gespecialiseerde schoonmaaktechnieken en apparatuur. Duogroep is gespecialiseerd in de reiniging van fabrieken, magazijnen, productiehallen en werkplaatsen. Wij werken volgens de strengste veiligheids- en hygiënenormen en beschikken over het juiste materiaal voor elke industriële omgeving.',
+    'service_buildings_long_desc' => 'Het onderhoud van gemeenschappelijke ruimtes in appartementsgebouwen is cruciaal voor de leefbaarheid en waarde van uw eigendom. Duogroep verzorgt de schoonmaak van trappenhuizen, gangen, liften, inkomhallen en andere gemeenschappelijke delen. Wij bieden flexibele contracten aan voor syndici en beheerders in Antwerpen.',
+    'service_schools_long_desc' => 'Een hygiënische schoolomgeving is van het grootste belang voor de gezondheid van leerlingen en personeel. Duogroep biedt professionele schoonmaak aan voor scholen, universiteiten en opleidingscentra. Van klaslokalen en gangen tot sportzalen en sanitaire blokken — wij garanderen een grondige en veilige reiniging.',
+    'service_horeca_long_desc' => 'In de horecasector zijn hygiëne en netheid van vitaal belang. Duogroep reinigt restaurants, hotels, cafés en cateringbedrijven volgens de HACCP-normen. Van keukens en eetruimtes tot kamers en sanitair — wij zorgen ervoor dat uw zaak altijd een onberispelijke indruk maakt op uw gasten.',
+    'service_apartments_long_desc' => 'Of het nu gaat om een verhuis, een bezichtiging of periodiek onderhoud — Duogroep zorgt voor een brandschoon appartement. Wij bieden grondige schoonmaak bij in- en uittrede, opfrisbeurt voor bezichtigingen en regelmatig onderhoud voor verhuurders en eigenaars in de regio Antwerpen.',
+    'service_parking_long_desc' => 'Parkeergarages worden vaak vergeten bij het schoonmaakonderhoud, maar een propere parking draagt bij aan de veiligheid en de uitstraling van uw gebouw. Duogroep reinigt ondergrondse en bovengrondse parkings met industriële veegmachines en hogedrukreinigers voor een optimaal resultaat.',
+    'service_deep_long_desc' => 'Soms is een gewone schoonmaak niet voldoende en is een grondige dieptereiniging nodig. Duogroep biedt intensieve schoonmaakdiensten aan voor kantoren, winkels, woningen en andere ruimtes. Ideaal voor seizoensgebonden groot onderhoud, na een lange periode zonder schoonmaak of als voorbereiding op een evenement.',
+
+    // Testimonials
+    'testimonial_1_text' => 'Duogroep onderhoudt onze kantoren al 3 jaar en we zijn zeer tevreden. Betrouwbaar, stipt en altijd een perfect resultaat. Een absolute aanrader!',
+    'testimonial_2_text' => 'Na onze verbouwing heeft Duogroep alles brandschoon opgeleverd. Professioneel team, correcte prijs en uitstekende communicatie. Zeker een topbedrijf!',
+
+    // Form
+    'form_sending' => 'Verzenden...',
+
     // Meta
     'meta_home_title' => 'Professioneel Schoonmaakbedrijf Antwerpen',
     'meta_home_description' => 'Duogroep - Professioneel schoonmaakbedrijf in Antwerpen. Kantoren, gebouwen, industrieel, horeca en meer. Gratis offerte. 24/7 beschikbaar.',

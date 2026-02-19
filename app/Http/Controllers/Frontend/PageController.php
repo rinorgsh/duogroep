@@ -14,6 +14,7 @@ class PageController extends Controller
             'image' => '/images/services/offices.jpg',
             'name_key' => 'service_offices',
             'desc_key' => 'service_offices_desc',
+            'long_desc_key' => 'service_offices_long_desc',
         ],
         [
             'slug' => 'schoonmaak-na-verbouwing',
@@ -21,6 +22,7 @@ class PageController extends Controller
             'image' => '/images/services/construction.jpg',
             'name_key' => 'service_construction',
             'desc_key' => 'service_construction_desc',
+            'long_desc_key' => 'service_construction_long_desc',
         ],
         [
             'slug' => 'glazenwasserij',
@@ -28,6 +30,7 @@ class PageController extends Controller
             'image' => '/images/services/windows.jpg',
             'name_key' => 'service_windows',
             'desc_key' => 'service_windows_desc',
+            'long_desc_key' => 'service_windows_long_desc',
         ],
         [
             'slug' => 'industriele-schoonmaak',
@@ -35,6 +38,7 @@ class PageController extends Controller
             'image' => '/images/services/industrial.jpg',
             'name_key' => 'service_industrial',
             'desc_key' => 'service_industrial_desc',
+            'long_desc_key' => 'service_industrial_long_desc',
         ],
         [
             'slug' => 'schoonmaak-gebouwen',
@@ -42,6 +46,7 @@ class PageController extends Controller
             'image' => '/images/services/buildings.jpg',
             'name_key' => 'service_buildings',
             'desc_key' => 'service_buildings_desc',
+            'long_desc_key' => 'service_buildings_long_desc',
         ],
         [
             'slug' => 'schoonmaak-scholen',
@@ -49,6 +54,7 @@ class PageController extends Controller
             'image' => '/images/services/schools.jpg',
             'name_key' => 'service_schools',
             'desc_key' => 'service_schools_desc',
+            'long_desc_key' => 'service_schools_long_desc',
         ],
         [
             'slug' => 'horeca-schoonmaak',
@@ -56,6 +62,7 @@ class PageController extends Controller
             'image' => '/images/services/horeca.jpg',
             'name_key' => 'service_horeca',
             'desc_key' => 'service_horeca_desc',
+            'long_desc_key' => 'service_horeca_long_desc',
         ],
         [
             'slug' => 'schoonmaak-appartementen',
@@ -63,6 +70,7 @@ class PageController extends Controller
             'image' => '/images/services/apartments.jpg',
             'name_key' => 'service_apartments',
             'desc_key' => 'service_apartments_desc',
+            'long_desc_key' => 'service_apartments_long_desc',
         ],
         [
             'slug' => 'parking-schoonmaak',
@@ -70,6 +78,7 @@ class PageController extends Controller
             'image' => '/images/services/parking.jpg',
             'name_key' => 'service_parking',
             'desc_key' => 'service_parking_desc',
+            'long_desc_key' => 'service_parking_long_desc',
         ],
         [
             'slug' => 'dieptereiniging',
@@ -77,6 +86,7 @@ class PageController extends Controller
             'image' => '/images/services/deep-cleaning.jpg',
             'name_key' => 'service_deep',
             'desc_key' => 'service_deep_desc',
+            'long_desc_key' => 'service_deep_long_desc',
         ],
     ];
 
@@ -102,7 +112,7 @@ class PageController extends Controller
         ]);
     }
 
-    public function serviceDetail(string $slug)
+    public function serviceDetail(string $locale, string $slug)
     {
         $service = collect($this->services)->firstWhere('slug', $slug);
 
@@ -110,9 +120,17 @@ class PageController extends Controller
             abort(404);
         }
 
+        $otherServices = collect($this->services)
+            ->where('slug', '!=', $slug)
+            ->shuffle()
+            ->take(4)
+            ->values()
+            ->all();
+
         return Inertia::render('Frontend/ServiceDetail', [
             'service' => $service,
             'services' => $this->services,
+            'otherServices' => $otherServices,
             'meta' => [
                 'title' => __("messages.{$service['name_key']}") . ' | Duogroep',
                 'description' => __("messages.{$service['desc_key']}"),

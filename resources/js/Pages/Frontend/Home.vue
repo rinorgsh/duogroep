@@ -301,7 +301,7 @@ const testimonials = [
                     <!-- Image Side -->
                     <div class="relative order-2 lg:order-1">
                         <div class="absolute -inset-3 md:-inset-4 bg-primary-100 rounded-2xl md:rounded-3xl -rotate-3"></div>
-                        <img src="/images/hero/hero-bg.jpg" alt="Professionele schoonmaak team" class="relative rounded-2xl md:rounded-3xl shadow-2xl w-full h-[280px] md:h-[400px] lg:h-[500px] object-cover" loading="lazy">
+                        <img src="/images/hero/why.jpg" alt="Professionele schoonmaak team" class="relative rounded-2xl md:rounded-3xl shadow-2xl w-full h-[280px] md:h-[400px] lg:h-[500px] object-cover" loading="lazy">
                         <!-- Floating stats card -->
                         <div class="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 bg-white rounded-xl md:rounded-2xl shadow-xl p-4 md:p-6 border border-gray-100">
                             <div class="flex items-center space-x-3 md:space-x-4">
