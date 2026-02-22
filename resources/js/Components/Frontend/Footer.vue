@@ -21,7 +21,7 @@ const serviceLinks = [
                 <!-- Company Info -->
                 <div class="col-span-2 md:col-span-1">
                     <div class="mb-4 md:mb-6">
-                        <img src="/images/logo.png" alt="Duogroep" class="h-8 md:h-12 w-auto">
+                        <img src="/images/logo.png" alt="Duogroep" class="h-12 md:h-16 w-auto">
                     </div>
                     <p class="text-primary-200 mb-5 md:mb-6 leading-relaxed text-sm md:text-base">
                         {{ t('footer_description') }}
