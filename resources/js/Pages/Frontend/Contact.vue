@@ -33,14 +33,14 @@ const contactInfo = [
     },
     {
         key: 'contact_phone',
-        value: '0460 97 71 23',
-        link: 'tel:+32460977123',
+        value: '0477 02 07 80',
+        link: 'tel:+32477020780',
         icon: 'phone',
     },
     {
         key: 'contact_email',
-        value: 'duogroep@gmail.com',
-        link: 'mailto:duogroep@gmail.com',
+        value: 'info@duogroepclean.be',
+        link: 'mailto:info@duogroepclean.be',
         icon: 'email',
     },
     {

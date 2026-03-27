@@ -100,19 +100,19 @@ const serviceLinks = [
                             <span class="text-primary-200 text-sm md:text-base">Middelmolenlaan 20, 2100 Deurne</span>
                         </li>
                         <li>
-                            <a href="tel:+32460977123" class="flex items-start text-primary-200 hover:text-white active:text-white/80 transition-colors">
+                            <a href="tel:+32477020780" class="flex items-start text-primary-200 hover:text-white active:text-white/80 transition-colors">
                                 <svg class="w-4 h-4 md:w-5 md:h-5 mr-2.5 md:mr-3 mt-0.5 text-primary-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                                 </svg>
-                                <span class="text-sm md:text-base">0460 97 71 23</span>
+                                <span class="text-sm md:text-base">0477 02 07 80</span>
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:duogroep@gmail.com" class="flex items-start text-primary-200 hover:text-white active:text-white/80 transition-colors">
+                            <a href="mailto:info@duogroepclean.be" class="flex items-start text-primary-200 hover:text-white active:text-white/80 transition-colors">
                                 <svg class="w-4 h-4 md:w-5 md:h-5 mr-2.5 md:mr-3 mt-0.5 text-primary-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                                 </svg>
-                                <span class="text-sm md:text-base">duogroep@gmail.com</span>
+                                <span class="text-sm md:text-base">info@duogroepclean.be</span>
                             </a>
                         </li>
                         <li class="flex items-start">

@@ -49,13 +49,13 @@ const { t } = useTranslations();
                 <p>Wij delen uw persoonsgegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van een overeenkomst of wettelijk verplicht is.</p>
 
                 <h2>6. Uw rechten</h2>
-                <p>U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen. Neem contact met ons op via duogroep@gmail.com.</p>
+                <p>U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen. Neem contact met ons op via info@duogroepclean.be.</p>
 
                 <h2>7. Cookies</h2>
                 <p>Onze website maakt gebruik van technische en analytische cookies om de website goed te laten functioneren en het gebruik te analyseren.</p>
 
                 <h2>8. Contact</h2>
-                <p>Voor vragen over dit privacybeleid kunt u contact opnemen via duogroep@gmail.com.</p>
+                <p>Voor vragen over dit privacybeleid kunt u contact opnemen via info@duogroepclean.be.</p>
             </div>
         </section>
     </FrontendLayout>
